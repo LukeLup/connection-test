@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connection Test — Claude Code × Cursor × GitHub</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0d0d0f;
+      color: #e8e8ec;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #18181b;
+      border: 1px solid #2a2a32;
+      border-radius: 16px;
+      padding: 3rem 3.5rem;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #1e3a2f;
+      color: #4ade80;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid #166534;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, #e8e8ec 0%, #9ca3af 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      color: #6b7280;
+      font-size: 0.95rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.5;
+    }
+
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .tool {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: #0d0d0f;
+      border: 1px solid #2a2a32;
+      border-radius: 10px;
+      padding: 0.9rem 1.2rem;
+      text-align: left;
+    }
+
+    .tool-icon {
+      font-size: 1.4rem;
+      width: 2rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .tool-info {
+      flex: 1;
+    }
+
+    .tool-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #e8e8ec;
+    }
+
+    .tool-desc {
+      font-size: 0.78rem;
+      color: #6b7280;
+      margin-top: 0.15rem;
+    }
+
+    .tool-status {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+    }
+
+    .status-ok {
+      background: #1e3a2f;
+      color: #4ade80;
+      border: 1px solid #166534;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #2a2a32;
+      margin-bottom: 1.5rem;
+    }
+
+    .meta {
+      font-size: 0.78rem;
+      color: #4b5563;
+    }
+
+    .meta span {
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">Connection Test</div>
+    <h1>Setup funktioniert</h1>
+    <p class="subtitle">
+      Diese Seite wurde von Claude Code erstellt und via Cursor bearbeitet —
+      bereit für den GitHub-Push.
+    </p>
+
+    <div class="stack">
+      <div class="tool">
+        <div class="tool-icon">🤖</div>
+        <div class="tool-info">
+          <div class="tool-name">Claude Code</div>
+          <div class="tool-desc">Anthropic CLI — Datei erstellt &amp; bearbeitet</div>
+        </div>
+        <span class="tool-status status-ok">OK</span>
+      </div>
+      <div class="tool">
+        <div class="tool-icon">🖱️</div>
+        <div class="tool-info">
+          <div class="tool-name">Cursor</div>
+          <div class="tool-desc">IDE — geöffnet &amp; verbunden</div>
+        </div>
+        <span class="tool-status status-ok">OK</span>
+      </div>
+      <div class="tool">
+        <div class="tool-icon">🐙</div>
+        <div class="tool-info">
+          <div class="tool-name">GitHub</div>
+          <div class="tool-desc">Remote-Repository — bereit für Push</div>
+        </div>
+        <span class="tool-status status-ok">OK</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <p class="meta">Erstellt am <span>02.06.2026</span> · LukeLup</p>
+  </div>
+</body>
+</html>
